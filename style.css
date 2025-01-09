@@ -1,0 +1,210 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color:black;
+    background-color: #f4f4f4;
+}
+
+/* Header styles */
+header {
+    background:blue;
+    color: #fff;
+    padding: 20px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FFD700; /* Gold color on hover */
+}
+
+/* Hero section styles */
+.hero {
+    background: url('https://img.lovepik.com/background/20211020/large/lovepik-the-background-of-internet-cloud-service-image_400077884.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background: #FFD700; /* Gold color */
+    color:black;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: #FFC107; /* Darker gold on hover */
+}
+
+/* Features section styles */
+.features {
+    background:url(https://wallpapers.com/images/hd/blurred-office-background-3440-x-1440-37okyfbrpimfbfb4.jpg);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.features h2 {
+    margin-bottom: 40px;
+    font-size: 36px;
+}
+
+.feature {
+    margin: 20px 0;
+}
+
+.feature h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Testimonials section styles */
+.testimonials {
+    background:url(https://th.bing.com/th/id/R.2095610a87077a9af94b6567cd7d34f8?rik=HOMTZncFWe0mPA&riu=http%3a%2f%2fwww.arcticairoutdoor.com%2fimages%2fSite1%2fbg.jpg&ehk=AUK8Y0f3rESRYzgUvwuEOzGKsis7mT4KIjp3b9UADw0%3d&risl=&pid=ImgRaw&r=0);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    margin-bottom: 40px;
+    font-size: 36px;
+}
+
+.testimonial {
+    margin: 20px 0;
+    font-style: italic;
+}
+
+.testimonial cite {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #007BFF;
+}
+
+/* Contact section styles */
+.contact {
+    background:url(https://st2.depositphotos.com/6442704/11354/i/950/depositphotos_113546632-stock-photo-white-blue-blur-abstract-building.jpg);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 40px;
+    font-size: 36px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.contact button {
+    background: #007BFF;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact button:hover {
+    background: #0056b3; /* Darker blue on hover */
+}
+
+/* Footer styles */
+footer {
+    background:black;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .hero h2 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .features h2, .testimonials h2, .contact h2 {
+        font-size: 28px;
+    }
+
+    .feature
